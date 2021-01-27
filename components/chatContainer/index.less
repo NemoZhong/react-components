@@ -1,0 +1,25 @@
+@indicatorHeight:24px;
+
+.container{
+    height: 100%;
+    min-height: 40vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+.noMarginTop{
+    margin-top: 0;
+}
+
+.indicator{
+    user-select: none;
+    height: @indicatorHeight;
+    line-height: @indicatorHeight;
+    padding: 2px;
+    text-align: center;
+    color: #aaa;
+}
